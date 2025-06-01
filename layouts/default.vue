@@ -16,9 +16,13 @@
     </Header>
 
 
-  <main class = "p-5 flex-row w-full bg-[url(/assets/images/bg1.png)] h-screen">
-        <slot />
-  </main>
+  <main class="p-5 flex-row w-full h-screen relative overflow-hidden">
+  <!-- Псевдоэлемент через Tailwind (используйте arbitrary values) -->
+  <div 
+    class="absolute inset-0 -z-10 bg-[url('/assets/images/bg1.png')] bg-cover bg-center [filter:blur(10px)]">
+  </div>
+  <slot />
+</main>
 
     <footer class = "flex flex-row w-full bg-gray-100 border-t-2 border-b-gray-400 items-center justify-center px-4 py-2 gap-4">
       <a href = "https://www.youtube.com/"><img src="assets/images/youtube.png" class = "w-16 h-16"></a>
