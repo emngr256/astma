@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/Alan/Desktop/astma-main-master/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
