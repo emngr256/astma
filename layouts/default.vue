@@ -36,40 +36,27 @@
   </div>
 </footer>
 </template>
+<script setup>
+import { useHead } from "#app";
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TBV7H87J68"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TBV7H87J68');
+useHead({
+    script: [
+        {
+            async: true,
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-TBV7H87J68',
+        },
+        {
+            innerHTML:`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TBV7H87J68');            
+            `,
+            type: 'text/javascript',
+        },
+    ],
+    _dangerouslyDisableSanitizersByTagID: {
+        gtag: ['innerHTML'],
+    },
+})
 </script>
-
-<!--#-->
-<!--  <script setup>-->
-<!--  import { usehead } from '#app';-->
-
-<!--  usehead({-->
-<!--    script: [-->
-<!--      {-->
-<!--        async:true,-->
-<!--        src:-->
-<!--      },-->
-<!--      {-->
-<!--        innerHTML:-->
-<!--          window.datalayer = window.datalayer || [];-->
-<!--          function gtag(){datalayer.push(arguments);}-->
-<!--          gtag('js', new Date());-->
-<!--          gtag('config', '');-->
-<!--          ,-->
-<!--          type: 'text/javascript',-->
-<!--      },-->
-<!--    ],-->
-<!--    _dangerouslyDisableSanitizerByTagID: {-->
-<!--      gtag: ['innerHTML'],-->
-<!--    }-->
-<!--  });-->
-<!--  </script>-->
-<!--#-->
