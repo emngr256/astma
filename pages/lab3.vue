@@ -7,10 +7,11 @@
 </template>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TBV7H87J68"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-2EL6G9XKRV'); // Замените G-XXXXXX на ваш ID
+
+  gtag('config', 'G-TBV7H87J68');
 </script>
