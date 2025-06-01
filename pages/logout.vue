@@ -81,7 +81,7 @@ p {
 }
 
 .logout-btn {
-  background: rgba(255, 68, 68, 0.9); /* Полупрозрачный красный */
+  background: rgba(54, 159, 107, 1); /* Полупрозрачный красный */
   color: white;
   border: none;
   padding: 12px 20px;
