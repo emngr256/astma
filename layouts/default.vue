@@ -16,7 +16,7 @@
     </Header>
 
 
-  <main class = "p-5 flex-row w-full bg-[url(/assets/images/bg.png)] h-screen">
+  <main class = "p-5 flex-row w-full bg-[url(/assets/images/bg1.png)] h-screen">
         <slot />
   </main>
 
