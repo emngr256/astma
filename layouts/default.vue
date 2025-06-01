@@ -1,17 +1,17 @@
 
 
 <template>
-    <header class="flex w-full items-center justify-between bg-gray-800 shadow-sm py-2 sticky top-0 z-50 text-white">
+    <header class="flex w-full items-center justify-between bg-gray-900 shadow-sm py-2 sticky top-0 z-50 text-white">
         <div class = "basis-1/4 items-center justify-start px-10">
             <img src="/assets/images/logo2.jpg" alt="Logo" class="h-12 w-12">
         </div>
         <div class="basis-1/4">
         </div>
         <nav class = "basis-1/2 flex flex-row items-center justify-end px-4 gap-4">
-            <NuxtLink to="/" class = "my-auto p-2 hover:bg-gray-900">Home</NuxtLink>
-            <NuxtLink to="/Lab3" class = "my-auto p-2 hover:bg-gray-900">Lab3</NuxtLink>
-            <NuxtLink to="/login" class = "my-auto p-2 hover:bg-gray-900">Login</NuxtLink>
-            <NuxtLink to="/logout" class = "my-auto p-2 hover:bg-gray-900">LogOut</NuxtLink>
+            <NuxtLink to="/" class = "my-auto p-2 hover:bg-black">Home</NuxtLink>
+            <NuxtLink to="/Lab3" class = "my-auto p-2 hover:bg-black">Lab3</NuxtLink>
+            <NuxtLink to="/login" class = "my-auto p-2 hover:bg-black">Login</NuxtLink>
+            <NuxtLink to="/logout" class = "my-auto p-2 hover:bg-black">LogOut</NuxtLink>
         </nav>
     </Header>
 
@@ -29,6 +29,12 @@
       <a href = "https://github.com/emngr256/astma?tab=readme-ov-file"><img src="assets/images/github.png" class = "w-16 h-16"></a>
       <a href = "https://www.facebook.com/"><img src="assets/images/facebook.png" class = "w-16 h-16 bg-transparent"></a>
     </footer>
+    <footer class="p-4 bg-gray-100">
+  <div class="text-xs text-gray-500 text-center">
+    <p>© 2025 ASTMA team</p>
+    <p>All rights reserved</p>
+  </div>
+</footer>
 </template>
 
 <!--#-->
