@@ -35,8 +35,8 @@ const logout = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: rgba(245, 245, 245, 0.8); /* Полупрозрачный фон страницы */
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0); /* Полупрозрачный фон страницы */
 }
 
 .account-card {
