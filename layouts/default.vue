@@ -2,10 +2,10 @@
 
 <template>
     <header class="flex w-full items-center justify-between bg-gray-900 shadow-sm py-2 sticky top-0 z-50 text-gray-500">
-        <div class = "basis-1/4 items-center justify-start px-10">
+        <div class = "basis-1/4 max-sm:basis-1/3 max-sm:px-4 items-center justify-start px-10">
             <img src="/assets/images/logo2.jpg" alt="Logo" class="h-12 w-12">
         </div>
-        <div class="basis-1/4">
+        <div class="basis-1/4 max-sm:hidden">
         </div>
         <nav :class="{'basis-1/2 flex flex-row items-center justify-end px-8 gap-4': !burger || burger,
          'max-sm:basis-auto max-sm:absolute max-sm:top-full max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:bg-white max-sm:px-0': burger,'max-sm:hidden':!burger}">
